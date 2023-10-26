@@ -1,0 +1,100 @@
+:root{
+     /* color */
+     --color-gray: #80765D;
+     --color-black: #242323;
+     --color-light-gray: #FFF9E4;
+     --color-mid-gray: #FFFCF6;
+     --color-dark-gray: #3C3C3C;
+     --color-yellow: #FFCF23;
+     --color-gray-2: #988353;
+     --color-gray-3:#3B3C39;
+     --color-white:#FFFFFF;
+     --color-white-2:#FAFAFA;
+     --color-cream:#FFF9E4;
+     /* font-size */
+     --fs-very-small: 16px;
+     --fs-small: 20px;
+     --fs-medium: 24px;
+     --fs-large: 42px;
+     --fs-xl: 44px;
+     --fs-xxl: 32px;
+}
+
+/* CSS Classes */
+
+/* font-families */
+.ff-Montserrat{
+    font-family: 'Montserrat Alternates';
+}
+
+
+/* colors */
+
+.color-gray{
+    color: var(--color-gray);
+}
+.color-gray-2{
+    color: var(--color-gray-2);
+}
+.color-gray-3{
+    color: var(--color-gray-3);
+}
+.color-light-gray{
+    color: var(--color-light-gray);
+}
+.color-mid-gray{
+    color: var(--color-mid--gray);
+}
+.color-dark-gray{
+    color: var(--color-dark-gray);
+}
+.color-black{
+    color: var(--color-black);
+}
+.color-white{
+    color: var(--color-white);
+}
+.color-white-2{
+    color: var(--color-white-2);
+}
+.color-yellow{
+    color: var(--color-yellow);
+}
+.background-cream{
+    background-color: var(--color-cream);
+}
+.background-gray{
+    background-color: var(--color-gray-3);
+}
+.background-black{
+    background-color: var(--color-black);
+}
+.background-mig-gray{
+    background-color: var(--color-mid--gray);
+}
+/* font-sizes */
+
+.fs-very-small{
+    font-size: var(--fs-very-small);
+}
+.fs-small{
+    font-size: var(--fs-small);
+}
+.fs-medium{
+    font-size: var(--fs-medium);
+}
+.fs-large{
+    font-size: var(--fs-large);
+}
+.fs-xl{
+    font-size: var(--fs-xl);
+}
+.fs-xxl{
+    font-size: var(--fs-xxl);
+}
+
+@media (min-width:768px) {
+    :root{
+        --fs-xxl: 62px;
+    }
+}
