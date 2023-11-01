@@ -22,44 +22,53 @@ navlinks.addEventListener("click", function () {
 })
 
 
-$('.slider-3').slick({
+$('.slider3').slick({
+    // autoplay: true,
+    centerMode: true,
+    centerPadding: '270px',
+    slidesToShow: 1,
     dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1.6,
-    centermode: true,
-    centerPadding: 100,
     arrows: false,
-    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 992,
             settings: {
-                dots: true,
                 infinite: true,
-                speed: 300,
-                slidesToShow: 1.6,
-                centermode: true,
-                centerPadding: 100,
-                arrows: false,
+                slidesToShow: 2,
                 slidesToScroll: 1,
+                centerMode: false,
             }
         },
         {
             breakpoint: 768,
             settings: {
-                dots: true,
                 infinite: true,
-                speed: 300,
                 slidesToShow: 1,
-                centermode: true,
-                centerPadding: 100,
-                arrows: false,
                 slidesToScroll: 1,
+                centerMode: false,
             }
         },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
+
+let topButton = document.getElementById("top");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        topButton.style.display = "flex";
+    }
+    else {
+        topButton.style.display = "none";
+    }
+});
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
+// preloader
+const preloader = document.getElementById("preloader");
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow-hidden")
+}, 2000);

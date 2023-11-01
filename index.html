@@ -12,12 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="icon" href="assets/images/slider-1-img-2.png">
+    <link rel="icon" href="assets/images/slider-1-img-2.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Cleauv Media</title>
 </head>
 
-<body>
+<body class="overflow-hidden">
+     <!-- Preloader-->
+    <div id="preloder"
+        class="vh-100 background-dark-gray d-flex flex-column gap-3 justify-content-center align-items-center position-fixed top-0 start-0 w-100">
+        <img src="assets/images/logo.png" alt="logo">
+        <div class="loader"></div>
+    </div>
+    <!-- back to top -->
+    <button id="top" class="position-fixed" onclick="backToTop()"><img class="w-100" src="assets/images/top-button.png"
+        alt="back to top icon"></button>
     <header class="vh-100 background-black position-relative">
         <img src="assets/images/elipse-1.svg" alt="elipse"
             class="position-absolute start-0 top-0 mt-5 pt-5 elipse z-1 d-none d-lg-block">
@@ -34,13 +43,13 @@
                     <div>
                         <img class="w-100" src="assets/images/logo.png" alt="logo">
                     </div>
-                    <ul class="m-0 p-0 d-flex align-items-center gap-41 mobileView">
-                        <li><a class="ff-Montserrat fs-very-small color-white-2 fw-normal" href="#">Home</a></li>
-                        <li><a class="ff-Montserrat fs-very-small color-white-2 fw-normal" href="#">About</a></li>
-                        <li><a class="ff-Montserrat fs-very-small color-white-2 fw-normal" href="#">Services</a></li>
-                        <li><a class="ff-Montserrat fs-very-small color-white-2 fw-normal" href="#">Pricing</a></li>
-                        <li><a class="ff-Montserrat fs-very-small color-white-2 fw-normal" href="#">FAQ</a></li>
-                        <li><a class="button1 padding1 ff-Montserrat fs-very-small color-white-2 fw-semibold"
+                    <ul class="m-0 px-4 d-flex align-items-center gap-41 mobileView">
+                        <li class="li-underline"><a class="ff-Montserrat fs-very-small color-white-2 fw-normal position-relative nav-hover-underline d-flex justify-content-center" href="#">Home</a></li>
+                        <li class="li-underline"><a class="ff-Montserrat fs-very-small color-white-2 fw-normal position-relative nav-hover-underline d-flex justify-content-center" href="#">About</a></li>
+                        <li class="li-underline"><a class="ff-Montserrat fs-very-small color-white-2 fw-normal position-relative nav-hover-underline d-flex justify-content-center" href="#">Services</a></li>
+                        <li class="li-underline"><a class="ff-Montserrat fs-very-small color-white-2 fw-normal position-relative nav-hover-underline d-flex justify-content-center" href="#">Pricing</a></li>
+                        <li class="li-underline"><a class="ff-Montserrat fs-very-small color-white-2 fw-normal position-relative nav-hover-underline d-flex justify-content-center" href="#">FAQ</a></li>
+                        <li><a class="button1 nav-button padding1 ff-Montserrat fs-very-small color-white-2 fw-semibold d-none d-lg-block"
                                 href="#">Login</a>
                         </li>
                     </ul>
@@ -79,7 +88,7 @@
             <div class="row slider">
                 <div class="col-4">
                     <div>
-                        <img class="rounded-3 w-100" src="assets/images/slider-1-img.png" alt="img">
+                        <img class="rounded-3 w-100" src="assets/images/slider-1-img-1.png" alt="img">
                     </div>
                 </div>
                 <div class="col-4">
@@ -95,30 +104,26 @@
             </div>
         </div>
     </section>
-    <section class="overflow-hidden pt-5">
+    <section class="my-5 py-5">
         <div class="d-flex flex-column align-items-center justify-content-center">
             <h2 class="m-0 ff-Montserrat fs-large color-gray fw-semibold text-center">Relevant Works</h2>
             <p class="m-0 ff-Montserrat fs-very-small color-gray fw-normal mw-697 text-center pt-3">Our team has successfully
                 collaborated with a diverse range of clients across various industries, providing innovative solutions
                 that address their unique challenges.</p>
         </div>
-        <div class="slider2 d-none d-md-block ">
-            <img class="ms-4 mw-710 rounded-3" src="assets/images/slider-2-img.png" alt="img">
-            <img class="ms-4 mw-710 rounded-3" src="assets/images/slider-2-img-2.png" alt="img">
-            <img class="ms-4 mw-710 rounded-3" src="assets/images/slider-2-img-3.png" alt="img">
-        </div>
-        <div class="container">
-            <div class="row flex-column d-block d-md-none py-5">
-                <div class="col-12">
-                    <img src="assets/images/slider-2-img.png" alt="book-img-4" class="w-100">
-                </div>
-                <div class="col-12">
-                    <img src="assets/images/slider-2-img-2.png" alt="book-img-4" class="w-100 mt-4">
-                </div>
-                <div class="col-12">
-                    <img src="assets/images/slider-2-img-3.png" alt="book-img-4" class="w-100 mt-4">
-                </div>
+        <div class="slider2">
+            <div class="pt-5 pt-lg-0">
+                <img class="width-100" src="assets/images/slider-img-1.png" alt="">
             </div>
+            <div class="pt-4 pt-lg-0">
+                <img class="width-100" src="assets/images/slider-img-2.png" alt="">
+            </div>
+            <div class="pt-4 pt-lg-0">
+                <img class="width-100" src="assets/images/slider-img-3.png" alt="">
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center pt-5">
+            <button class="slider-2-button">Book a Call</button>
         </div>
     </section>
     <section class="background-black py-5 position-relative z-1 overflow-hidden">
@@ -420,107 +425,183 @@
             and
             competitive pricing plans
             to suit your specific needs.</p>
-        <div class="slider-3">
-            <div class="slider3-card">
-                <div class="d-lg-flex p-lg-5 p-md-3 p-2 gap-4">
-                    <div class="">
-                        <img src="assets/images/slider-girl-img.png" alt="girl-img">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <p class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">Arlene McCoy</p>
-                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">CEO of Mind.ly</p>
-                        <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75">Contrary to popular
-                            belief,
-                            Lorem
-                            Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                            and
-                            going</p>
+        <div class="slider3">
+            <div class="border-radius-15 background-mig-gray slider-3-card slider-3-gap mx-lg-4 mx-3 d-flex flex-column flex-xl-row">
+                <div class="d-flex d-xl-block align-items-center gap-3">
+                    <img class="slider-3-img" src="assets/images/slider-girl-img.png" alt="girl image">
+                    <div class="d-xl-none">
+                        <h3 class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">
+                            Arlene McCoy</h3>
+                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">
+                            CEO of Mind.ly</p>
                     </div>
                 </div>
-            </div>
-            <div class="slider3-card">
-                <div class="d-lg-flex p-lg-5 p-md-3 p-2 gap-4">
-                    <div class="">
-                        <img src="assets/images/slider-girl-img-2.png" alt="girl-img">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <p class="fs-medium ff-montserrat color-dark-gray fw-600 mb-0">Arlene McCoy</p>
-                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">CEO of Mind.ly</p>
-                        <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75">Contrary to popular
-                            belief,
-                            Lorem
-                            Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                            and
-                            going</p>
-                    </div>
+                <div>
+                    <h3
+                        class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">
+                        Arlene McCoy</h3>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50 d-none d-xl-block">
+                        CEO
+                        of Mind.ly</p>
+                    <p
+                        class="text-black ff-montserrat fs-sm1 fst-normal fw-normal line-height-150 opacity07 max-width-548 d-none d-md-block">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going</p>
+                    <p class="text-black ff-montserrat fs-sm1 fst-normal fw-normal line-height-150 opacity07 d-md-none">
+                        Enim amet mauris venenatis ante condimentum. Nisi ornare faucibus donec sit cras
+                        suscipit dui nulla pulvinar. Diam
+                        pellentesque bibendum sed sapien auctor lorem scelerisque. Vel tincidunt sollicitudin
+                        donec rutrum vestibulum. Mauris
+                        ante purus at quis velit convallis in dui nibh.</p>
                 </div>
             </div>
-            <div class="slider3-card">
-                <div class="d-lg-flex p-lg-5 p-md-3 p-2 gap-4">
-                    <div class="">
-                        <img src="assets/images/slider-girl-img.png" alt="girl-img">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <p class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">Arlene McCoy</p>
-                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">CEO of Mind.ly</p>
-                        <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75">Contrary to popular
-                            belief,
-                            Lorem
-                            Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                            and
-                            going</p>
+            <div class="border-radius-15 background-mig-gray slider-3-card slider-3-gap mx-lg-4 mx-3 d-flex flex-column flex-xl-row">
+                <div class="d-flex d-xl-block align-items-center gap-3">
+                    <img class="slider-3-img" src="assets/images/slider-girl-img.png" alt="girl image">
+                    <div class="d-xl-none">
+                        <h3 class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0">
+                            Arlene McCoy</h3>
+                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">
+                            CEO of Mind.ly</p>
                     </div>
                 </div>
-            </div>
-            <div class="slider3-card">
-                <div class="d-lg-flex p-lg-5 p-md-3 p-2 gap-4">
-                    <div class="">
-                        <img src="assets/images/slider-girl-img.png" alt="girl-img">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <p class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">Arlene McCoy</p>
-                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">CEO of Mind.ly
-                        </p>
-                        <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75">Contrary to popular
-                            belief,
-                            Lorem
-                            Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                            and
-                            going</p>
-                    </div>
+                <div>
+                    <h3
+                        class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0 d-none d-xl-block">
+                        Arlene McCoy</h3>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50 d-none d-xl-block">
+                        CEO
+                        of Mind.ly</p>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat text-black opacity-75 mw-548 d-none d-md-block">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going</p>
+                    <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75 d-md-none">
+                        Enim amet
+                        mauris venenatis ante condimentum. Nisi ornare faucibus donec sit cras suscipit dui
+                        nulla pulvinar. Diam
+                        pellentesque bibendum sed sapien auctor lorem scelerisque. Vel tincidunt sollicitudin
+                        donec rutrum
+                        vestibulum. Mauris
+                        ante purus at quis velit convallis in dui nibh.</p>
                 </div>
             </div>
-            <div class="slider3-card">
-                <div class="d-lg-flex p-lg-5 p-md-3 p-2 gap-4">
-                    <div class="">
-                        <img src="assets/images/slider-girl-img.png" alt="girl-img">
+            <div class="border-radius-15 background-mig-gray slider-3-card slider-3-gap mx-lg-4 mx-3 d-flex flex-column flex-xl-row">
+                <div class="d-flex d-xl-block align-items-center gap-3">
+                    <img class="slider-3-img" src="assets/images/slider-girl-img-2.png" alt="girl image">
+                    <div class="d-xl-none">
+                        <h3 class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0">
+                            Arlene McCoy</h3>
+                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">
+                            CEO of Mind.ly</p>
                     </div>
-                    <div class="d-flex flex-column">
-                        <p class="fs-medium ff-montserrat color-dark-gray fw-semibold mb-0">Arlene McCoy</p>
-                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">CEO of Mind.ly
-                        </p>
-                        <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75">Contrary to popular
-                            belief,
-                            Lorem
-                            Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                            Hampden-Sydney College in Virginia,
-                            looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                            and
-                            going</p>
+                </div>
+                <div>
+                    <h3
+                        class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0 d-none d-xl-block">
+                        Arlene McCoy</h3>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50 d-none d-xl-block">
+                        CEO
+                        of Mind.ly</p>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat text-black opacity-75 mw-548 d-none d-md-block">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going</p>
+                    <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75 d-md-none">
+                        Enim amet
+                        mauris venenatis ante condimentum. Nisi ornare faucibus donec sit cras suscipit dui
+                        nulla pulvinar. Diam
+                        pellentesque bibendum sed sapien auctor lorem scelerisque. Vel tincidunt sollicitudin
+                        donec rutrum
+                        vestibulum. Mauris
+                        ante purus at quis velit convallis in dui nibh.</p>
+                </div>
+            </div>
+            <div class="border-radius-15 background-mig-gray slider-3-card slider-3-gap mx-lg-4 mx-3 d-flex flex-column flex-xl-row">
+                <div class="d-flex d-xl-block align-items-center gap-3">
+                    <img class="slider-3-img" src="assets/images/slider-girl-img.png" alt="girl image">
+                    <div class="d-xl-none">
+                        <h3 class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0">
+                            Arlene McCoy</h3>
+                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">
+                            CEO of Mind.ly</p>
                     </div>
+                </div>
+                <div>
+                    <h3
+                        class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0 d-none d-xl-block">
+                        Arlene McCoy</h3>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50 d-none d-xl-block">
+                        CEO
+                        of Mind.ly</p>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat text-black opacity-75 mw-548 d-none d-md-block">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going</p>
+                    <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75 d-md-none">
+                        Enim amet
+                        mauris venenatis ante condimentum. Nisi ornare faucibus donec sit cras suscipit dui
+                        nulla pulvinar. Diam
+                        pellentesque bibendum sed sapien auctor lorem scelerisque. Vel tincidunt sollicitudin
+                        donec rutrum
+                        vestibulum. Mauris
+                        ante purus at quis velit convallis in dui nibh.</p>
+                </div>
+            </div>
+            <div class="border-radius-15 background-mig-gray slider-3-card slider-3-gap mx-lg-4 mx-3 d-flex flex-column flex-xl-row">
+                <div class="d-flex d-xl-block align-items-center gap-3">
+                    <img class="slider-3-img" src="assets/images/slider-girl-img.png" alt="girl image">
+                    <div class="d-xl-none">
+                        <h3 class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0">
+                            Arlene McCoy</h3>
+                        <p class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50">
+                            CEO of Mind.ly</p>
+                    </div>
+                </div>
+                <div>
+                    <h3
+                        class="fs-medium ff-montserrat color-dark-gray fw-semibold mt-2 mb-0 d-none d-xl-block">
+                        Arlene McCoy</h3>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat color-dark-gray opacity-50 d-none d-xl-block">
+                        CEO
+                        of Mind.ly</p>
+                    <p
+                        class="fs-very-small fw-normal ff-montserrat text-black opacity-75 mw-548 d-none d-md-block">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                        Hampden-Sydney College in Virginia,
+                        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                        and going</p>
+                    <p class="fs-very-small fw-normal ff-montserrat text-black opacity-75 d-md-none">
+                        Enim amet
+                        mauris venenatis ante condimentum. Nisi ornare faucibus donec sit cras suscipit dui
+                        nulla pulvinar. Diam
+                        pellentesque bibendum sed sapien auctor lorem scelerisque. Vel tincidunt sollicitudin
+                        donec rutrum
+                        vestibulum. Mauris
+                        ante purus at quis velit convallis in dui nibh.</p>
                 </div>
             </div>
         </div>
@@ -729,7 +810,8 @@
             </div>
         </div>
         <hr class="color-white m-0">
-            <p class="color-white-2 ff-montserrat fw-normal fs-very-small text-center m-0 py-4">Copyright@Cleauvmedia.2023</p>
+        <p class="color-white-2 ff-montserrat fw-normal fs-very-small text-center m-0 py-4">Copyright@Cleauvmedia.2023
+        </p>
     </section>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -760,12 +842,20 @@
     <script>
         $('.slider2').slick({
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
-            centerPadding: '100px',
+            centerPadding: '0',
             arrows: false,
+            variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: "unslick",
+                }
+            ]
         }
+
         );
     </script>
 </body>

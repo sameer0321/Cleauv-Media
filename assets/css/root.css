@@ -72,6 +72,9 @@
 .background-mig-gray{
     background-color: var(--color-mid--gray);
 }
+.background-dark-gray{
+    background-color: var(--color-dark-gray);
+}
 /* font-sizes */
 
 .fs-very-small{
